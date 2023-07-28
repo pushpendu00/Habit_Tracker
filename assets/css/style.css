@@ -1,0 +1,210 @@
+body{
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: rgb(65, 65, 65);
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+/* header part */
+header{
+    height: 50px;
+    width: 100%;
+    /* background-color: rgb(78, 78, 78); */
+    background-color: rgb(227, 25, 210);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width : 450px){
+    #logo{
+        padding-left: 20px;
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+    #username{
+        padding-right: 20px;
+        font-size: 1.1rem;
+    }
+    .weekly-views,.list{
+        width: 95%;
+    }
+    /* .weekly-views{
+        width: 95%;
+    } */
+}
+
+@media only screen and (min-width : 450px){
+    #logo{
+        padding-left: 20px;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    #username{
+        padding-right: 20px;
+        font-size: 1.5rem;
+    }
+    .weekly-views,.list{
+        width: 60%;
+    }
+}
+
+
+/* main content */
+
+main::-webkit-scrollbar{
+    display: none;
+}
+main{
+    height: 90vh;
+    width: 100%;
+    background-image: url(/image/background2.png);
+    background-position: center;
+    background-size: cover;
+    /* display: flex;
+    justify-content: center; */
+}
+
+#input-form{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#input-habits{
+    height: 30px;
+    width: 60%;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    /* cursor: pointer; */
+}
+
+#add-button{
+    /* height: 30px; */
+    border-radius: 7px;
+    margin-left: 20px;
+    font-size: large;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: greenyellow;
+}
+#habits-list ul::-webkit-scrollbar{
+    display: none;
+}
+#habits-list ul{
+    height: 80vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    overflow-y: scroll;
+}
+
+/* @media only screen and(max-width : 450px){
+    
+} */
+
+.habits-content{
+    /* height: 100px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weekly-views{
+    display: none;
+    background-color: rgb(61, 61, 255);
+    border-radius: 10px;
+}
+.weekly-views-div{
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3px;
+    /* background-color: azure; */
+}
+.weekly-views-div img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.list{
+    margin-top: 10px;
+    height: 120px;
+    background-color: rgb(81, 209, 248);
+    display: flex;
+    border-radius: 10px;
+}
+
+.habits{
+    height: 18px;
+    width: 18px;
+}
+.habits input{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.list-div1{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-div2{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-div2-habitName-and-days{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+
+.list-div2-time-views-delete{
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    padding-right: 20px;
+}
+
+.weekly-views-button,.delete-button{
+    cursor: pointer;
+    border: none;
+    font-size: larger;
+    border-radius: 5px;
+}
+.weekly-views-button{
+    background-color: rgb(255, 242, 98);
+}
+.delete-button{
+    background-color: rgb(255, 59, 59);
+}
+
+footer{
+    color: rgb(255, 255, 255);
+    font-size: 110%;
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    background-color: rgb(65, 65, 65);
+}
+
+
