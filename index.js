@@ -4,7 +4,7 @@ const cron = require('node-cron');
 const habitmodel = require('./models/habitSchema');
 
 const app = express();
-port =4400;
+var port =4400;
 
 app.use(bodyParser.urlencoded({extended : true}));
 
